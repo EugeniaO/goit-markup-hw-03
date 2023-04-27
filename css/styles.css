@@ -29,10 +29,15 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
-  max-width: 1128px;
+  width: 1158px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 15px;
 }
 
 .flex-container {
@@ -61,17 +66,15 @@ p {
 /* header */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--border-color);
 }
 
 .navigation {
   display: flex;
-  align-content: center;
+  align-items: center;
 }
 
-.navigation-list {
+.menu {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -100,7 +103,9 @@ p {
   color: var(--main-color);
 }
 
-.navigation-link {
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--main-color);
   font-weight: 500;
   line-height: 1.5;
@@ -112,6 +117,8 @@ p {
 }
 
 .contacts {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--paragraph-color);
   text-decoration: none;
   font-style: normal;
